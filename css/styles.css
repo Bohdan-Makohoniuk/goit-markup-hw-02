@@ -1,39 +1,88 @@
-body {
-  background-color: #ffffff;
-  color: #757575;
+:root {
+  --primary-text-calor: #757575;
+  --title-text-calor: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
 }
-/* основний колір #212121 */
-/* основний колір тексту #757575 */
-/* колір герой #2F303A */
-/* колір секції наша команда F5F4FA */
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-calor);
+}
+
 .list {
   list-style: none;
 }
+.logo .logo-nav {
+  color: var(--title-text-calor);
+}
 .logo {
-  color: #000000;
+  color: var(--accent-color);
 }
 
 .logo-nav {
-  color: #2196f3;
+  color: var(--accent-color);
 }
-/* -------------------------------site-nav---------------------- */
+/* -------------------------------site-nav----------------------------- */
 .site-nav .link {
-  color: #2196f3;
+  color: var(--title-text-calor);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #000000;
+  color: var(--accent-color);
+}
+/*------------------------------auth-nav-------------------------------*/
+.link {
+  color: var(--primary-text-calor);
+}
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
 }
 
 /* --------------------------------hero-------------------------------- */
+.hero .button {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
 .hero {
   background-color: #2f303a;
 }
 .hero-title {
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
-/* -------------------------section "чим займаємось"----------------------------------- */
+.button {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+.button:hover,
+.button:focus {
+  color: var(--accent-color);
+  background-color: var(--primary-white-color);
+}
+
+/* -------------------------section "чим займаємось"------------------- */
 .section-title {
   color: #212121;
+}
+.section-text {
+  color: var(--title-text-calor);
+}
+/* -------------------------section "team"------------------------------ */
+.section-team {
+  color: var(--title-text-calor);
+}
+/*---------------------------------footer-------------------------------- */
+.logo {
+  color: var(--accent-color);
+}
+.footer,
+.logo-footer {
+  background-color: #2f303a;
+  color: var(--primary-white-color);
+}
+/* -------------------------------link--------------------------------- */
+.list > .link {
+  color: rgba(255, 255, 255, 0.6);
 }
