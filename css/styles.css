@@ -1,0 +1,39 @@
+body {
+  background-color: #ffffff;
+  color: #757575;
+}
+/* основний колір #212121 */
+/* основний колір тексту #757575 */
+/* колір герой #2F303A */
+/* колір секції наша команда F5F4FA */
+.list {
+  list-style: none;
+}
+.logo {
+  color: #000000;
+}
+
+.logo-nav {
+  color: #2196f3;
+}
+/* -------------------------------site-nav---------------------- */
+.site-nav .link {
+  color: #2196f3;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #000000;
+}
+
+/* --------------------------------hero-------------------------------- */
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  color: #ffffff;
+}
+/* -------------------------section "чим займаємось"----------------------------------- */
+.section-title {
+  color: #212121;
+}
