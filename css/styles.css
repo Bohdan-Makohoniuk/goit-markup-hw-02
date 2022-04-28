@@ -18,11 +18,13 @@ button {
   list-style: none;
 }
 /*------------------------------------logo-----------------------------*/
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  text-decoration: none;
 }
 .logo {
   color: var(--accent-color);
@@ -37,6 +39,7 @@ button {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -44,6 +47,7 @@ button {
 }
 /*------------------------------auth-nav list--------------------------*/
 .link {
+  text-decoration: none;
   color: var(--primary-text-calor);
   font-weight: 500;
   font-size: 14px;
