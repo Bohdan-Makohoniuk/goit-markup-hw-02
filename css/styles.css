@@ -47,6 +47,9 @@ body {
   color: var(--title-text-calor);
 }
 /*------------------------------site-nav list--------------------------*/
+.site-nav .link.current {
+  color: var(--accent-color);
+}
 .site-nav,
 .link {
   font-weight: 500;
@@ -54,6 +57,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   list-style: none;
+}
+.site-nav .link {
+  cursor: pointer;
 }
 /*------------------------------auth-nav list------------------------*/
 .auth-nav {
@@ -133,4 +139,18 @@ body {
 .footer-text {
   color: #ffffff99;
   list-style: none;
+}
+/*----------------------------------PORTFOLIO-----------------------------*/
+
+.list .title-portfolio {
+  color: var(--title-text-calor);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.list .text-portfolio {
+  color: var(--primary-text-calor);
+  font-size: 16px;
+  line-height: 1.88;
 }
