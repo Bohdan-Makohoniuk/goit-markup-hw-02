@@ -10,13 +10,15 @@ body {
   font-family: Roboto, serif;
   background-color: var(--primary-white-color);
   color: var(--primary-text-calor);
-  font-weight: 400;
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   /* or 24px */
   letter-spacing: 0.03em;
 }
+button {
+  font-family: inherit;
+}
+
 .title {
   color: var(--title-text-calor);
 }
@@ -62,10 +64,15 @@ body {
   cursor: pointer;
 }
 /*------------------------------auth-nav list------------------------*/
-.auth-nav {
+.auth-nav,
+.list {
   list-style: none;
+  text-decoration: none;
 }
 .auth-nav .list {
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
   color: var(--primary-text-calor);
 }
 .list:hover,
@@ -75,6 +82,15 @@ body {
 /*-----------------------------------hero----------------------------*/
 .hero {
   background-color: var(--color-bg-hero);
+}
+.button-hero {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1, 88;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 .hero-title {
   color: var(--primary-white-color);
@@ -129,7 +145,9 @@ body {
   text-align: center;
 }
 /*---------------------------------footer---------------------------------*/
-
+address {
+  font-style: normal;
+}
 .footer,
 .logo-footer {
   background-color: var(--color-bg-hero);
@@ -139,9 +157,12 @@ body {
 .footer-text {
   color: #ffffff99;
   list-style: none;
+  text-decoration: none;
 }
 /*----------------------------------PORTFOLIO-----------------------------*/
-
+.list .portfolio .link {
+  line-height: 1.63;
+}
 .list .title-portfolio {
   color: var(--title-text-calor);
   font-weight: 700;
@@ -153,4 +174,14 @@ body {
   color: var(--primary-text-calor);
   font-size: 16px;
   line-height: 1.88;
+}
+.list .button {
+  color: var(--title-text-calor);
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+.button:hover,
+.button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
