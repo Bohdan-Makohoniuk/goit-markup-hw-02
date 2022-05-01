@@ -17,6 +17,12 @@ body {
 }
 button {
   font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-calor);
 }
 
 .title {
@@ -32,9 +38,6 @@ button {
 .link:focus {
   color: var(--accent-color);
 }
-/* button {
-  font-family: inherit;
-} */
 
 /*------------------------------------logo-----------------------------*/
 .logo {
@@ -64,16 +67,15 @@ button {
   cursor: pointer;
 }
 /*------------------------------auth-nav list------------------------*/
-.auth-nav,
-.list {
+.auth-nav {
   list-style: none;
-  text-decoration: none;
 }
 .auth-nav .list {
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--primary-text-calor);
+  text-decoration: none;
 }
 .list:hover,
 .list:focus {
@@ -83,14 +85,19 @@ button {
 .hero {
   background-color: var(--color-bg-hero);
 }
-.button-hero {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+
+.button-primary {
+  font-style: 400;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1, 88;
+  line-height: 1.88;
+  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
+
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
 }
 .hero-title {
   color: var(--primary-white-color);
@@ -154,34 +161,28 @@ address {
   color: var(--primary-white-color);
 }
 .list,
-.footer-text {
+.list-footer {
   color: #ffffff99;
   list-style: none;
   text-decoration: none;
 }
+
 /*----------------------------------PORTFOLIO-----------------------------*/
-.list .portfolio .link {
-  line-height: 1.63;
+.button {
+  color: var(--title-text-calor);
+  background-color: #f5f4fa;
+  cursor: pointer;
 }
+.button:hover,
+.button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
 .list .title-portfolio {
   color: var(--title-text-calor);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-}
-.list .text-portfolio {
-  color: var(--primary-text-calor);
-  font-size: 16px;
-  line-height: 1.88;
-}
-.list .button {
-  color: var(--title-text-calor);
-  background-color: #f5f4fa;
-  border-radius: 4px;
-}
-.button:hover,
-.button:focus {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
 }
