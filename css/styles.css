@@ -15,6 +15,24 @@ body {
   /* or 24px */
   letter-spacing: 0.03em;
 }
+.container {
+  outline: 2px solid tomato;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 button {
   font-family: inherit;
   font-weight: 500;
@@ -24,7 +42,11 @@ button {
   letter-spacing: 0.03em;
   color: var(--title-text-calor);
 }
-
+.section,
+.section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .title {
   color: var(--title-text-calor);
 }
@@ -40,7 +62,13 @@ button {
 }
 
 /*------------------------------------logo-----------------------------*/
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 .logo {
+  margin-right: 90px;
+
   color: var(--accent-color);
   font-family: 'Raleway';
   font-weight: 700;
@@ -52,23 +80,53 @@ button {
   color: var(--title-text-calor);
 }
 /*------------------------------site-nav list--------------------------*/
+.site-nav,
+.auth-nav {
+  display: flex;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/* Варіант перший */
+/* .site-nav .item:not(:last-child) {
+  margin-right: 50px;
+} */
+/* варіант другий */
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.auth-nav {
+  margin-left: auto;
+}
+.auth-nav .item + .item {
+  margin-left: 50px;
+}
+
+.link {
+  outline: 1px solid tomato;
+}
+
 .site-nav .link.current {
   color: var(--accent-color);
 }
+
 .site-nav,
 .link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  list-style: none;
-}
-.site-nav .link {
-  cursor: pointer;
 }
 /*------------------------------auth-nav list------------------------*/
 .auth-nav {
   list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .auth-nav .list {
   font-weight: 500;
@@ -81,38 +139,51 @@ button {
 .list:focus {
   color: var(--accent-color);
 }
-/*-----------------------------------hero----------------------------*/
+/*-----------------------------------"hero"----------------------------*/
 .hero {
   background-color: var(--color-bg-hero);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+.hero-title {
+  width: 700px;
+  margin-bottom: 30px;
+
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .button-primary {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  display: inline-block;
+  min-width: 200px;
+
   font-style: 400;
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.88;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
 
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
-.hero-title {
-  color: var(--primary-white-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-/* ---------------------------------saction------------------------ */
+
+/* ---------------------------------saction "особенности"------------------------ */
 .section-list {
   list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .section-title {
+  margin-bottom: 10px;
+
   color: var(--title-text-calor);
   font-weight: 700;
   font-size: 14px;
@@ -126,20 +197,27 @@ button {
   line-height: 1.16;
   text-align: center;
 }
-.item {
-  list-style: none;
-}
-/*-------------------------------section team------------------------ */
+
+/*-------------------------------section "team"------------------------ */
 .section-team {
   background-color: #f5f4fa;
 }
 .title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
 }
+.item {
+  list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .team {
+  margin-bottom: 10px;
   color: var(--title-text-calor);
   font-weight: 500;
   font-size: 16px;
@@ -152,16 +230,17 @@ button {
   text-align: center;
 }
 /*---------------------------------footer---------------------------------*/
-address {
-  font-style: normal;
-}
 .footer,
 .logo-footer {
   background-color: var(--color-bg-hero);
   color: var(--primary-white-color);
 }
-.list,
-.list-footer {
+address {
+  font-style: normal;
+}
+
+.list-footer,
+.list {
   color: #ffffff99;
   list-style: none;
   text-decoration: none;
