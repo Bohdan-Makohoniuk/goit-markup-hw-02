@@ -16,12 +16,11 @@ body {
   letter-spacing: 0.03em;
 }
 .container {
-  outline: 2px solid tomato;
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 h1,
 h2,
@@ -107,10 +106,6 @@ button {
   margin-left: 50px;
 }
 
-.link {
-  outline: 1px solid tomato;
-}
-
 .site-nav .link.current {
   color: var(--accent-color);
 }
@@ -177,9 +172,17 @@ button {
 
 /* ---------------------------------saction "особенности"------------------------ */
 .section-list {
+  padding-left: 0px;
+  padding-right: 0px;
+  display: flex;
+
   list-style: none;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.section-list li + li {
+  margin-left: 30px;
+  width: 270;
 }
 .section-title {
   margin-bottom: 10px;
@@ -197,11 +200,18 @@ button {
   line-height: 1.16;
   text-align: center;
 }
+.section .item {
+  display: flex;
+}
+.item .img + .img {
+  margin-left: 30px;
+}
 
 /*-------------------------------section "team"------------------------ */
-.section-team {
+.section-team .container {
   background-color: #f5f4fa;
 }
+
 .title {
   margin-bottom: 50px;
 
@@ -214,6 +224,18 @@ button {
   list-style: none;
   margin-top: 0px;
   margin-bottom: 0px;
+  padding-left: 0px;
+}
+.item .team-item {
+  width: 270px;
+  height: 260px;
+  display: inline-block;
+}
+.item .team-item + .team-item {
+  margin-left: 30px;
+}
+.team-item .img {
+  margin-bottom: 30px;
 }
 
 .team {
@@ -245,8 +267,12 @@ address {
   list-style: none;
   text-decoration: none;
 }
-
+/* ---------------------------------------------------------------------- */
 /*----------------------------------PORTFOLIO-----------------------------*/
+.container {
+  border: 1px solid tomato;
+}
+/* -------------------------------buttoin filter---------------------------- */
 .button {
   color: var(--title-text-calor);
   background-color: #f5f4fa;
@@ -257,11 +283,34 @@ address {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
-
-.list .title-portfolio {
+/*-------------------------------------cards-------------------------*/
+.list-cards .title-portfolio {
   color: var(--title-text-calor);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+}
+.list-cards {
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.list-caards .item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-portfolio {
+  color: var(--primary-text-calor);
+}
+.list .item:hover,
+.list .item:focus {
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.list .item {
+  display: flex;
+  flex-wrap: wrap;
 }
